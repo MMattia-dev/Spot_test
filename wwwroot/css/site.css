@@ -13,10 +13,124 @@ html {
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
+    background-color: black;
 }
 
 body {
-  margin-bottom: 60px;
+  /*margin-bottom: 60px;*/
+  background-color: black;
+  /*overflow: hidden;*/
+}
+
+.container {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 8px;
+}
+
+.navigator {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    gap: 8px;
+    position: fixed;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.home_search {
+    width: 420px;
+    background-color: #121212;
+    border-radius: 8px;
+    min-height: 115px;
+    height: 115px;
+    padding: 8px 12px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+
+    /*.home_search a {
+
+    }*/
+
+    /*.home_search span {
+        font-family: Arial;
+        font-weight: 700;
+        font-size: 16px;
+        box-sizing: border-box;
+        color: rgba(255, 255, 255, 0.7);
+        user-select: none;
+        letter-spacing: 0.03em;
+    }*/
+
+    .home_search li {
+        /*372*40*/
+        width: 372px;
+        height: 40px;
+        /*background-color: rgba(255, 0, 0, 0.2);*/
+        display: flex;
+        /*flex-flow: row;*/
+        /*justify-content: flex-start;*/
+        /*gap: 20px;*/
+        align-items: center;
+        /*align-content: center;*/
+        transform: translateY(-3px);
+    }
+
+        .home_search li:hover {
+            cursor: pointer;
+        }
+
+        .home_search li a {
+            transform: translateY(5px);
+        }
+
+        .home_search li a svg {
+            /*color: rgba(255, 255, 255, 0.7);*/
+            fill: rgba(255, 255, 255, 0.65);
+            transform: scale(102%) translateY(-2px);
+
+        }
+
+        .home_search li a span {
+            font-family: Arial;
+            font-weight: 700;
+            font-size: 15px;
+            box-sizing: border-box;
+            color: rgba(255, 255, 255, 0.65);
+            user-select: none;
+            letter-spacing: 0.03em;
+            margin: 0.9rem;
+            
+        }
+
+        /*.home_search li:hover > span {*/
+            /*cursor: pointer;*/
+            /*transition: 0.3s ease-in-out;
+            color: white;
+        }*/
+
+.library {
+    width: 420px;
+    background-color: #121212;
+    border-radius: 8px;
+    height: calc(100% - 140px);
+}
+
+.navbar_S {
+    position: fixed;
+    height: 60px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
