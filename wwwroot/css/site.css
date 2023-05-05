@@ -164,6 +164,7 @@ a {
     gap: 8px;
     margin-left: 1rem;
     margin-top: 6px;
+    margin-bottom: 8px;
     transform: translateY(-2px);
     user-select: none;
     overflow: hidden;
@@ -224,11 +225,10 @@ a {
         }
 
 .songs {
-    /*display: flex;*/
-    /*justify-content: space-between;*/
-    /*flex-direction: row;*/
-    /*align-items: center;*/
-    
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+    height: 100%;
 }
 
 .search {
@@ -239,7 +239,7 @@ a {
     min-width: 385px;
     height: 34px;
     margin-left: 1rem;
-    margin-top: 8px;
+    /*margin-top: 8px;*/
 }
 
     .search button {
@@ -272,8 +272,8 @@ a {
     align-items: center;
     width: 112px;
     height: 32px;
-    gap: 1.45rem;
-    transform: translateX(7px);
+    gap: 0.6rem;
+    transform: translateX(21px);
 }
 
 .filter span {
@@ -297,6 +297,7 @@ a {
     display: flex;
     flex-direction: column;
     margin-top: 5px;
+    margin-bottom: 8px;
     overflow-y: visible;
 }
 
@@ -358,8 +359,10 @@ a {
     .likedSongs_title span {
         color: white;
         font-size: 16px;
-        letter-spacing: 0.012em;
-        /*transform: scale(105%);*/
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 300px;
     }
 
 .likedSongs_pin {
@@ -379,22 +382,45 @@ a {
         color: rgba(255, 255, 255, 0.65);
         font-size: 14px;
         font-family: Arial;
-        letter-spacing: 0.015em;
-        
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 300px;
     }
 
+.goodMorning {
+    /*width: 420px;
+    background-color: #121212;
+    border-radius: 8px;
+    height: calc(100% - 140px);
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    position: relative;*/
+    background-color: #121212;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    position: relative !important;
+}
+
+/*.parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}*/
 
 
 
 
-
-
-
-    .navbar_S {
+    /*.navbar_S {
         position: fixed;
         height: 60px;
         background-color: transparent;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
+    }*/
