@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Spot_test.Data;
 using Spot_test.Models;
 using System.Diagnostics;
 
@@ -6,15 +7,24 @@ namespace Spot_test.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        //private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        //public HomeController(ILogger<HomeController> logger)
+        //{
+        //    _logger = logger;
+        //}
+
+        public readonly ApplicationDbContext _context;
+
+        public HomeController(ApplicationDbContext context)
         {
-            _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
         {
+            ViewBag.P_Model = _context.PlaylistsModel2;
+
             return View();
         }
 

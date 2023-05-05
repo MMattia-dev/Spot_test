@@ -224,10 +224,11 @@ a {
         }
 
 .songs {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*flex-direction: row;*/
+    /*align-items: center;*/
+    
 }
 
 .search {
@@ -265,23 +266,135 @@ a {
             transform: translateY(-2px);
         }
 
-.search select {
-    /*margin-top: 10px;*/
-
-
-
-
-
-
-
+.filter button {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 112px;
+    height: 32px;
+    gap: 1.45rem;
+    transform: translateX(7px);
 }
 
+.filter span {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 14px;
+}
 
-.navbar_S {
-    position: fixed;
-    height: 60px;
-    background-color: transparent;
+    .filter button:hover {
+        background-color: unset;
+    }
+
+        .filter button:hover span {
+            color: white;
+        }
+
+    .filter svg {
+        transform: translateY(1px) scale(104%) !important;
+    }
+
+.savedSongs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    overflow-y: visible;
+}
+
+.likedSongs {
+    /*background-color: rgba(255, 0, 0, 0.2);*/
+    margin: 0 8px 0 8px;
+    border-radius: 5px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+    .likedSongs:hover {
+        background-color: rgb(26, 26, 26);
+    }
+
+    .likedSongs button {
+        outline: none;
+        background-color: transparent;
+        position: absolute;
+        z-index: 1;
+        cursor: pointer;
+        border: none;
+        width: calc(100% - 16px);
+        height: 64px;
+        border-radius: 5px;
+    }
+
+.likedSongs_img {
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+}
+
+    .likedSongs_img img {
+        border-radius: 4px;
+    }
+
+.likedSongs_desc {
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(-7px);
+    height: 44px;
+}
+
+.likedSongs_title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 22px;
+}
+
+    .likedSongs_title span {
+        color: white;
+        font-size: 16px;
+        letter-spacing: 0.012em;
+        /*transform: scale(105%);*/
+    }
+
+.likedSongs_pin {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    height: 22px;
+    gap: 0.25rem;
 }
+
+    .likedSongs_pin svg {
+        transform: scale(80%) translateX(-3px);
+        fill: rgb(30, 215, 96);
+    }
+
+    .likedSongs_pin span {
+        color: rgba(255, 255, 255, 0.65);
+        font-size: 14px;
+        font-family: Arial;
+        letter-spacing: 0.015em;
+        
+    }
+
+
+
+
+
+
+
+
+    .navbar_S {
+        position: fixed;
+        height: 60px;
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
