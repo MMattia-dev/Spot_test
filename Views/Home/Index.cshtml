@@ -5,125 +5,145 @@
 }
 
 <div class="parent">
+    <div class="navigator">
+        <ul class="home_search">
+            <li>
+                <a asp-area="" asp-controller="Home" asp-action="Index">
+                    <svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon">
+                        <path d="M12.5 3.247a1 1 0 0 0-1 0L4 7.577V20h4.5v-6a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v6H20V7.577l-7.5-4.33zm-2-1.732a3 3 0 0 1 3 0l7.5 4.33a2 2 0 0 1 1 1.732V21a1 1 0 0 1-1 1h-6.5a1 1 0 0 1-1-1v-6h-3v6a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.577a2 2 0 0 1 1-1.732l7.5-4.33z"></path>
+                    </svg>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon">
+                        <path d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.226 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 1 0 1.414-1.414l-4.344-4.344a9.157 9.157 0 0 0 2.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z"></path>
+                    </svg>
+                    <span>Szukaj</span>
+                </a>
+            </li>
+        </ul>
 
-</div>
-<div class="navigator">
-    <ul class="home_search">
-        <li>
-            <a asp-area="" asp-controller="Home" asp-action="Index">
-                <svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon">
-                    <path d="M12.5 3.247a1 1 0 0 0-1 0L4 7.577V20h4.5v-6a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v6H20V7.577l-7.5-4.33zm-2-1.732a3 3 0 0 1 3 0l7.5 4.33a2 2 0 0 1 1 1.732V21a1 1 0 0 1-1 1h-6.5a1 1 0 0 1-1-1v-6h-3v6a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.577a2 2 0 0 1 1-1.732l7.5-4.33z"></path>
-                </svg>
-                <span>Home</span>
-            </a>
-        </li>
-        <li>
-            <a>
-                <svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon">
-                    <path d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.226 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 1 0 1.414-1.414l-4.344-4.344a9.157 9.157 0 0 0 2.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z"></path>
-                </svg>
-                <span>Szukaj</span>
-            </a>
-        </li>
-    </ul>
+        <div class="library">
+            <div class="biblioteka_plus">
+                <a>
+                    <svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon">
+                        <path d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"></path>
+                    </svg>
+                    <span>Biblioteka</span>
+                </a>
+                <a>
+                    <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon">
+                        <path d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75z"></path>
+                    </svg>
+                </a>
+            </div>
 
-    <div class="library">
-        <div class="biblioteka_plus">
-            <a>
-                <svg role="img" height="24" width="24" aria-hidden="true" viewBox="0 0 24 24" data-encore-id="icon">
-                    <path d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"></path>
-                </svg>
-                <span>Biblioteka</span>
-            </a>
-            <a>
-                <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon">
-                    <path d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75a.75.75 0 0 1 .75.75z"></path>
-                </svg>
-            </a>
-        </div>
-
-        <div class="playlists">
-            <a>
-                <span>Playlisty</span>
-            </a>
-            <a>
-                <span>Wykonawcy</span>
-            </a>
-            <a>
-                <span>Albumy</span>
-            </a>
-            <a>
-                <span>Podcasty i programy</span>
-            </a>
-            <button>
-                <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon">
-                    <path d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z"></path>
-                </svg>
-            </button>
-        </div>
-
-        <div class="songs">
-            <div class="search">
+            <div class="playlists">
+                <a>
+                    <span>Playlisty</span>
+                </a>
+                <a>
+                    <span>Wykonawcy</span>
+                </a>
+                <a>
+                    <span>Albumy</span>
+                </a>
+                <a>
+                    <span>Podcasty i programy</span>
+                </a>
                 <button>
                     <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon">
-                        <path d="M7 1.75a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5zM.25 7a6.75 6.75 0 1 1 12.096 4.12l3.184 3.185a.75.75 0 1 1-1.06 1.06L11.304 12.2A6.75 6.75 0 0 1 .25 7z"></path>
+                        <path d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z"></path>
                     </svg>
                 </button>
+            </div>
 
-                <div class="filter">
+            <div class="songs">
+                <div class="search">
                     <button>
-                        <span>Ostatnie</span>
                         <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon">
-                            <path d="m14 6-6 6-6-6h12z"></path>
+                            <path d="M7 1.75a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5zM.25 7a6.75 6.75 0 1 1 12.096 4.12l3.184 3.185a.75.75 0 1 1-1.06 1.06L11.304 12.2A6.75 6.75 0 0 1 .25 7z"></path>
                         </svg>
                     </button>
+
+                    <div class="filter">
+                        <button>
+                            <span>Ostatnie</span>
+                            <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon">
+                                <path d="m14 6-6 6-6-6h12z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="savedSongs">
+
+                    @foreach (var item in ((IEnumerable<PlaylistsModel2>)ViewBag.P_Model).OrderByDescending(x => x.Pinned))
+                    {
+                        <div class="likedSongs">
+                            <button tabindex="-1"></button>
+                            <div class="likedSongs_img">
+                                <img height="48" width="48" src="@item.Image" />
+                            </div>
+                            <div class="likedSongs_desc">
+                                <div class="likedSongs_title">
+                                    <span>@item.Title</span>
+                                </div>
+                                <div class="likedSongs_pin">
+                                    @if (item.Pinned == true)
+                                    {
+                                        <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon">
+                                            <path d="M8.822.797a2.72 2.72 0 0 1 3.847 0l2.534 2.533a2.72 2.72 0 0 1 0 3.848l-3.678 3.678-1.337 4.988-4.486-4.486L1.28 15.78a.75.75 0 0 1-1.06-1.06l4.422-4.422L.156 5.812l4.987-1.337L8.822.797z"></path>
+                                        </svg>
+                                    }
+                                    <span>@item.Description</span>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
                 </div>
             </div>
-            <div class="savedSongs">
 
-                @foreach (var item in ((IEnumerable<PlaylistsModel2>)ViewBag.P_Model).OrderBy(x => x.Id))
-                {
-                    <div class="likedSongs">
-                        <button tabindex="-1"></button>
-                        <div class="likedSongs_img">
-                            <img height="48" width="48" src="@item.Image" />
-                        </div>
-                        <div class="likedSongs_desc">
-                            <div class="likedSongs_title">
-                                <span>@item.Title</span>
-                            </div>
-                            <div class="likedSongs_pin">
-                                @if(item.Pinned == true)
-                                {
-                                    <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon">
-                                        <path d="M8.822.797a2.72 2.72 0 0 1 3.847 0l2.534 2.533a2.72 2.72 0 0 1 0 3.848l-3.678 3.678-1.337 4.988-4.486-4.486L1.28 15.78a.75.75 0 0 1-1.06-1.06l4.422-4.422L.156 5.812l4.987-1.337L8.822.797z"></path>
-                                    </svg>
-                                }
-                                <span>@item.Description</span>
-                            </div>
-                        </div>
-                    </div>
-                }
+        </div>
+    </div>
+
+    <div class="goodMorning">
+        <div class="navbar_S">
+            <div class="prev_next">
+                <button>
+                    <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon">
+                        <path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z"></path>
+                    </svg>
+                </button>
+                <button>
+                    <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon">
+                        <path d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="install_user">
+                <div class="install">
+                    <a>
+                        <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon">
+                            <path d="M4.995 8.745a.75.75 0 0 1 1.06 0L7.25 9.939V4a.75.75 0 0 1 1.5 0v5.94l1.195-1.195a.75.75 0 1 1 1.06 1.06L8 12.811l-.528-.528a.945.945 0 0 1-.005-.005L4.995 9.805a.75.75 0 0 1 0-1.06z"></path>
+                            <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13z"></path>
+                        </svg>
+                        <span>Zainstaluj aplikację</span>
+                    </a>
+                </div>
+                <div class="user">
+                    <svg role="img" height="16" width="16" aria-hidden="true" viewBox="0 0 16 16" data-encore-id="icon">
+                        <path d="M6.233.371a4.388 4.388 0 0 1 5.002 1.052c.421.459.713.992.904 1.554.143.421.263 1.173.22 1.894-.078 1.322-.638 2.408-1.399 3.316l-.127.152a.75.75 0 0 0 .201 1.13l2.209 1.275a4.75 4.75 0 0 1 2.375 4.114V16H.382v-1.143a4.75 4.75 0 0 1 2.375-4.113l2.209-1.275a.75.75 0 0 0 .201-1.13l-.126-.152c-.761-.908-1.322-1.994-1.4-3.316-.043-.721.077-1.473.22-1.894a4.346 4.346 0 0 1 .904-1.554c.411-.448.91-.807 1.468-1.052zM8 1.5a2.888 2.888 0 0 0-2.13.937 2.85 2.85 0 0 0-.588 1.022c-.077.226-.175.783-.143 1.323.054.921.44 1.712 1.051 2.442l.002.001.127.153a2.25 2.25 0 0 1-.603 3.39l-2.209 1.275A3.25 3.25 0 0 0 1.902 14.5h12.196a3.25 3.25 0 0 0-1.605-2.457l-2.209-1.275a2.25 2.25 0 0 1-.603-3.39l.127-.153.002-.001c.612-.73.997-1.52 1.052-2.442.032-.54-.067-1.097-.144-1.323a2.85 2.85 0 0 0-.588-1.022A2.888 2.888 0 0 0 8 1.5z"></path>
+                    </svg>
+                </div>
             </div>
         </div>
 
     </div>
 </div>
 
-<div class="goodMorning">
-    <div class="navbar_S">
-        <div class="prev_next"></div>
-        <div class="install_user">
-            <div class="install">
-
-            </div>
-            <div class="user">
-
-            </div>
-        </div>
-    </div>
-
-</div>
 
 <script type="text/javascript">
 

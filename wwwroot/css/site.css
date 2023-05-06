@@ -21,13 +21,17 @@ html {
 body {
   /*margin-bottom: 60px;*/
   background-color: black;
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 .container {
     margin-left: 0;
     margin-right: 0;
-    padding: 8px;
+    /*padding: 8px;*/
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
+    max-width: 100%;
 }
 
 .navigator {
@@ -35,7 +39,7 @@ body {
     flex-flow: column;
     height: 100%;
     gap: 8px;
-    position: fixed;
+    /*position: fixed;*/
 }
 
 ul {
@@ -97,7 +101,11 @@ a {
     width: 420px;
     background-color: #121212;
     border-radius: 8px;
-    height: calc(100% - 140px);
+    /*height: calc(100% - 140px);*/
+    /*max-height: calc(100% - 140px);*/
+
+    height: calc(100vh - 140px);
+
     display: flex;
     flex-direction: column;
     gap: 0px;
@@ -181,8 +189,6 @@ a {
         border-radius: 32px;
         background-color: rgba(255, 255, 255, 0.065);
         padding: 7px 12px 7px 12px;
-        
-
         transition: background-color 0.3s;
         letter-spacing: 0.015em;
         white-space: nowrap;
@@ -388,41 +394,128 @@ a {
         max-width: 300px;
     }
 
+.parent {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+
 .goodMorning {
-    /*width: 420px;
+    width: 100%;
+    height: calc(100vh - 16px);
     background-color: #121212;
-    border-radius: 8px;
-    height: calc(100% - 140px);
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 0px;
-    position: relative;*/
-    background-color: #121212;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    position: relative !important;
+    border-radius: 8px;
+}
 
+.navbar_S {
+    position: sticky;
+    top: 0;
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 35px;
 
 }
 
-/*.parent {
+.prev_next {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    height: 100%;
-    width: 100%;
-    position: relative;
-}*/
+    justify-content: center;
+    align-items: center;
+    width: 72px;
+    height: 32px;
+    gap: 8px;
+}
 
-
-
-
-    /*.navbar_S {
-        position: fixed;
-        height: 60px;
-        background-color: transparent;
+    .prev_next button {
+        border: none;
+        outline: none;
+        height: 32px;
+        width: 32px;
+        border-radius: 100px;
+        background-color: rgb(34, 34, 34);
+        border-radius: 100px;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }*/
+        justify-content: center;
+        align-items: center;
+    }
+
+    .prev_next button svg {
+        fill: rgba(255, 255, 255, 0.65);
+    }
+
+.install_user {
+    display: flex;
+    gap: 10px;
+}
+
+.install {
+    display: flex;
+    border-radius: 32px;
+    background-color: rgba(255, 255, 255, 0.065);
+    align-items: center;
+    justify-content: center;
+    height: 33px;
+    width: 180px;
+}
+
+    .install a:hover {
+        cursor: pointer;
+    }
+
+    .install a svg {
+        fill: rgba(255, 255, 255, 0.65);
+        transform: translateY(-1px);
+    }
+
+    .install a span {
+        font-size: 0.88rem;
+        color: white;
+        transition: background-color 0.3s;
+        letter-spacing: 0.015em;
+        white-space: nowrap;
+        font-weight: bold;
+        margin-left: 2px;
+    }
+
+.user {
+    height: 33px;
+    width: 33px;
+    background-color: rgba(255, 255, 255, 0.065);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+    .user svg {
+        fill: rgba(255, 255, 255, 0.65);
+    }
+
+
+/*.playlists a:hover {
+    cursor: pointer;
+}
+
+.playlists a span {
+    font-size: 0.88rem;
+    color: white;
+    border-radius: 32px;
+    background-color: rgba(255, 255, 255, 0.065);
+    padding: 7px 12px 7px 12px;
+    transition: background-color 0.3s;
+    letter-spacing: 0.015em;
+    white-space: nowrap;
+}
+
+.playlists a:hover span {
+    transition: background-color 0.3s;
+    background-color: rgba(255, 255, 255, 0.1);
+}*/
