@@ -141,6 +141,20 @@
             </div>
         </div>
 
+        <div class="goodMorning_title">
+            <span>Dzień dobry</span>
+        </div>
+
+        <div class="grid">
+            @foreach (var item in ((IEnumerable<PlaylistsModel2>)ViewBag.P_Model).OrderByDescending(x => x.Pinned).Take(6))
+            {
+                <div class="grid_">
+
+                </div>
+            }
+        </div>
+
+
     </div>
 </div>
 

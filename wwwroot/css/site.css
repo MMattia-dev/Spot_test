@@ -64,6 +64,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 9px;
+    user-select: none;
 }
 
     .home_search li {
@@ -121,6 +122,7 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 0px 0 0 24px;
+    user-select: none;
 }
 
     .biblioteka_plus a:hover {
@@ -285,6 +287,7 @@ a {
 .filter span {
     color: rgba(255, 255, 255, 0.65);
     font-size: 14px;
+    user-select: none;
 }
 
     .filter button:hover {
@@ -340,6 +343,7 @@ a {
     justify-content: center;
     width: 64px;
     height: 64px;
+    user-select: none;
 }
 
     .likedSongs_img img {
@@ -353,6 +357,7 @@ a {
     justify-content: center;
     transform: translateX(-7px);
     height: 44px;
+    user-select: none;
 }
 
 .likedSongs_title {
@@ -360,6 +365,7 @@ a {
     align-items: center;
     justify-content: flex-start;
     height: 22px;
+    user-select: none;
 }
 
     .likedSongs_title span {
@@ -409,6 +415,9 @@ a {
     display: flex;
     flex-direction: column;
     border-radius: 8px;
+    -webkit-box-shadow: inset 0px 470px 290px -300px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: inset 0px 470px 290px -300px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 470px 290px -300px rgba(255, 255, 255, 0.3);
 }
 
 .navbar_S {
@@ -439,11 +448,15 @@ a {
         height: 32px;
         width: 32px;
         border-radius: 100px;
-        background-color: rgb(34, 34, 34);
+        background-color: rgb(42, 42, 42);
         border-radius: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .prev_next button:hover {
+        cursor: not-allowed;
     }
 
     .prev_next button svg {
@@ -458,20 +471,22 @@ a {
 .install {
     display: flex;
     border-radius: 32px;
-    background-color: rgba(255, 255, 255, 0.065);
+    background-color: rgba(0,0,0,0.56);
     align-items: center;
     justify-content: center;
-    height: 33px;
+    height: 32px;
     width: 180px;
+    user-select: none;
 }
 
-    .install a:hover {
+    .install:hover {
         cursor: pointer;
+        transform: scale(105%);
     }
 
     .install a svg {
-        fill: rgba(255, 255, 255, 0.65);
-        transform: translateY(-1px);
+        fill: white;
+        transform: translateY(-2px);
     }
 
     .install a span {
@@ -482,12 +497,13 @@ a {
         white-space: nowrap;
         font-weight: bold;
         margin-left: 2px;
+        
     }
 
 .user {
     height: 33px;
     width: 33px;
-    background-color: rgba(255, 255, 255, 0.065);
+    background-color: rgba(0,0,0,0.56);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -495,9 +511,50 @@ a {
     cursor: pointer;
 }
 
-    .user svg {
-        fill: rgba(255, 255, 255, 0.65);
+    .user:hover {
+        background-color: black;
     }
+
+    .user svg {
+        fill: white;
+    }
+
+.goodMorning_title {
+    /*display: flex;*/
+    /*justify-content: flex-start;*/
+    /*align-items: flex-start;*/
+
+    width: 100%;
+    height: 43.4px;
+    padding-left: 25px;
+    padding-right: 35px;
+}
+
+    .goodMorning_title span {
+        color: white;
+        font-size: 29px;
+        font-weight: bold;
+        /*font-weight: 600;*/
+        font-family: Tahoma;
+        letter-spacing: -0.01em;
+        user-select: none;
+    }
+
+.grid {
+    display: grid;
+    grid-gap: 12px 24px;
+    grid-template: auto/repeat(auto-fill,minmax(max(var(200px),25%),1fr));
+}
+
+    .grid div {
+        background-color: hsla(0,0%,100%,.1);
+        border-radius: 4px;
+        height: 64px;
+        overflow: hidden;
+        position: relative;
+        transition: background-color .3s ease;
+    }
+
 
 
 /*.playlists a:hover {
