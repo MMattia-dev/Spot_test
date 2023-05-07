@@ -532,7 +532,7 @@ a {
 
     .goodMorning_title span {
         color: white;
-        font-size: 29px;
+        font-size: 30px;
         font-weight: bold;
         /*font-weight: 600;*/
         font-family: Tahoma;
@@ -543,36 +543,68 @@ a {
 .grid {
     display: grid;
     grid-gap: 12px 24px;
-    grid-template: auto/repeat(auto-fill,minmax(max(var(200px),25%),1fr));
+    grid-template: auto/repeat(auto-fill,minmax(max(200px,25%),1fr));
+    padding: 1rem 1.6rem 0 1.6rem;
+    /*user-select: none;*/
 }
 
-    .grid div {
+    .grid .grid_ {
         background-color: hsla(0,0%,100%,.1);
         border-radius: 4px;
-        height: 64px;
-        overflow: hidden;
+        height: 80px;
+        /*overflow: hidden;*/
         position: relative;
         transition: background-color .3s ease;
+        cursor: pointer;
     }
 
+        .grid .grid_:hover {
+            transition: background-color .3s ease;
+            background-color: hsla(0,0%,100%,.2);
+        }
 
 
-/*.playlists a:hover {
-    cursor: pointer;
-}
-
-.playlists a span {
-    font-size: 0.88rem;
+.grid_ {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     color: white;
-    border-radius: 32px;
-    background-color: rgba(255, 255, 255, 0.065);
-    padding: 7px 12px 7px 12px;
-    transition: background-color 0.3s;
-    letter-spacing: 0.015em;
-    white-space: nowrap;
 }
 
-.playlists a:hover span {
-    transition: background-color 0.3s;
-    background-color: rgba(255, 255, 255, 0.1);
-}*/
+    .grid_ a {
+        padding: 0 16px;
+        font-weight: bold;
+        font-size: 15px;
+        overflow: hidden;
+        /*text-overflow: ellipsis;
+        white-space: normal;
+        word-break: break-word;*/
+        
+    }
+
+.grid_desc {
+    /*display: flex;
+    justify-content: flex-start;
+    align-items: center;*/
+    /*padding: 0 16px 0 16px;*/
+    /*height: 100%; */
+
+}
+
+    .grid_desc a {
+        /*user-select: none;*/
+        
+    }
+
+        .grid_desc a p {
+            /*color: white;*/
+            /*display: -webkit-box;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: normal;
+            word-break: break-word;*/
+        }
+
+.grid_img {
+    pointer-events: none;
+}
